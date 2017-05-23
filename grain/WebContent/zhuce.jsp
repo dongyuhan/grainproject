@@ -27,21 +27,7 @@ body {
 </table>
 <table width="562" border="0" align="center" cellpadding="0" cellspacing="0" class="right-table03">
   <tr>
-    <td width="221"><table width="95%" border="0" cellpadding="0" cellspacing="0" class="login-text01">
-      
-      <tr>
-        <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="login-text01">
-          <tr>
-            <td align="center"><img src="${ctx }/images/ico13.gif" width="107" height="97" /></td>
-          </tr>
-          <tr>
-            <td height="40" align="center">&nbsp;</td>
-          </tr>
-          
-        </table></td>
-        <td><img src="${ctx }/images/line01.gif" width="5" height="292" /></td>
-      </tr>
-    </table></td>
+   
     <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="31%" height="35" class="login-text02">用户名 ：<br /></td>
@@ -52,21 +38,27 @@ body {
         <td><input name="textfield2" type="password" size="33" /></td>
       </tr>
       <tr>
-        <td height="35" class="login-text02">验证码 ：<br /></td>
-        <td><img src="${ctx }/images/pic05.gif" width="109" height="40" /> <a href="#" class="login-text03">换一张</a></td>
+        <td height="35" class="login-text02">确认密码 ：<br /></td>
+        <td><input name="textfield2" type="password" size="33" /></td>
       </tr>
       <tr>
-        <td height="35" class="login-text02">请输入验证码 ：</td>
-        <td><input name="textfield3" type="text" size="30" /></td>
+        <td width="31%" height="35" class="login-text02">联系方式 ：<br /></td>
+        <td width="69%"><input name="textfield" type="text" size="30" /></td>
       </tr>
+       
+      <tr>
+         <td width="14%" align="right" nowrap  class="login-text02">简介:</td>
+        <td width="86%" colspan="3"><textarea name="textarea3" cols="105" rows="20"></textarea></td>
+            </tr>
        <tr>
-        <td height="35" class="login-text02">您的身份 ：</td>
-        <td><input name="role" type="radio" value="管理员"class="login-text02">管理员<input name="role" type="radio" value="管理员"class="login-text02">用户</td>
-      </tr>
+
+          <td width="14%" align="right" nowrap  class="login-text02">上传图片:</td>
+          <td width="86%" colspan="3"><input type="file" name="imgUpload" id="imgUpload"> </td>
+            </tr>
       <tr>
         <td height="35">&nbsp;</td>
-        <td><input name="Submit2" type="submit" class="right-button01" value="登陆" onClick="window.location='${ctx }/index.jsp'" />
-        <a href="${ctx }/zhuce.jsp"><button class="right-button02">注册</button></a>
+        <td>
+        <button class="right-button02" type="submit">注册</button>
          
       </tr>
     </table></td>
